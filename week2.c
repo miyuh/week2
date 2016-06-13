@@ -49,10 +49,10 @@ int main(int argc, char** argv)
   double term;
  
 
-  for(int s=1; s<=n; s++){
-  for (int t=1; t<=n; t++){
+  for(int s=0; s<n; s++){
+  for (int t=0; t<n; t++){
   term=0;
-  for(int k=1; k<=n; k++){
+  for(int k=0; k<n; k++){
   term = a[s * n + k]* b[k * n + t] + term;
 
   }
